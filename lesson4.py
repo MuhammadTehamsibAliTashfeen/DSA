@@ -1,12 +1,11 @@
-# 1. Creates count = 0.
-# 2. Uses a for loop to visit numbers from 1 through 20.
-# 3. Counts how many numbers are divisible by 3.
-# 4. Prints the final count.
+# Mission 25: Write your own while loop
+# Write a Python program that:
+# 1. Starts with number = 1.
+# 2. Uses a while loop to print numbers from 1 through 10.
+# 3. Increases number by 1 each iteration.
+# 4. Stops after printing 10.
 
-count = 0
-for i in range(1,21):
-    if i % 3 == 0:
-        count += 1
-
-print(count)
-print("Learning Git is fun!")
+number = 1
+while number <= 10:
+    print(number)
+    number += 1
