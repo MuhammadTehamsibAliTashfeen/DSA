@@ -9,3 +9,4 @@ for i in range(1,21):
         count += 1
 
 print(count)
+print("Learning Git is fun!")
