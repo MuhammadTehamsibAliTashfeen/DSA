@@ -1,9 +1,20 @@
-# rite a Python program that:
-# 1. Creates numbers = [10, 20, 30, 40, 50].
-# 2. Changes the second element to 99.
-# 3. Changes the last element to 100 using its positive index.
-# 4. Prints the entire updated list.
-numbers = [10, 20, 30, 40, 50]
-numbers[1] = 99
-numbers[4] = 100
-print(numbers)
+# Write a program that:
+# 1. Searches numbers = [5, 10, 15, 20, 25].
+# 2. Sets target = 99.
+# 3. Uses linear search with range(len(numbers)).
+# 4. Prints "Found at index X" if the target exists, replacing X with the actual index.
+# 5. Prints "Not Found" if the target does not exist.
+numbers = [5, 10, 15, 20, 25]
+target = 99
+index = -1
+
+for i in range(len(numbers)):
+    if target == numbers[i]:
+        print("Found at index",i)
+        index = i
+        break
+
+
+if index == -1:
+    print("Not Found")
+        
