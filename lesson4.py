@@ -1,11 +1,13 @@
-# Mission 25: Write your own while loop
+# Mission 27: Your coding challenge
 # Write a Python program that:
-# 1. Starts with number = 1.
-# 2. Uses a while loop to print numbers from 1 through 10.
-# 3. Increases number by 1 each iteration.
-# 4. Stops after printing 10.
+# 1. Uses a for loop to visit numbers from 1 through 10.
+# 2. Stops the loop when the number reaches 6.
+# 3. Prints only 1, 2, 3, 4, and 5.
+# 4. Uses the break keyword.
 
-number = 1
-while number <= 10:
-    print(number)
-    number += 1
+for i in range(1,11):
+    
+    if i == 6:
+        break
+    print(i)
+        
