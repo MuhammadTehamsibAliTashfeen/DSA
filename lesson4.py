@@ -1,13 +1,9 @@
-# Mission 27: Your coding challenge
-# Write a Python program that:
-# 1. Uses a for loop to visit numbers from 1 through 10.
-# 2. Stops the loop when the number reaches 6.
-# 3. Prints only 1, 2, 3, 4, and 5.
-# 4. Uses the break keyword.
-
-for i in range(1,11):
-    
-    if i == 6:
-        break
-    print(i)
-        
+# rite a Python program that:
+# 1. Creates numbers = [10, 20, 30, 40, 50].
+# 2. Changes the second element to 99.
+# 3. Changes the last element to 100 using its positive index.
+# 4. Prints the entire updated list.
+numbers = [10, 20, 30, 40, 50]
+numbers[1] = 99
+numbers[4] = 100
+print(numbers)
