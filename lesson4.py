@@ -1,20 +1,12 @@
-def count_occurrences(numbers, target):
-    if len(numbers) == 0:
-        return 0
-    elif len(numbers) > 0:
-        count = 0
-        for i in numbers:
-            if i == target:
-                count +=1
-        return count
-    
-    
-    
-    
-    
-    
-    
-    
-print(count_occurrences([2, 4, 2, 6, 2], 2))
-print(count_occurrences([1, 3, 5], 7))
-print(count_occurrences([], 10))
+
+def reverse_list(numbers):
+    reversed_numbers = []
+    for i in range(len(numbers)-1,-1,-1):
+        reversed_numbers.append(numbers[i])
+    return reversed_numbers
+            
+            
+print(reverse_list([10, 20, 30, 40, 50]))
+print(reverse_list([1]))
+print(reverse_list([]))
+print(reverse_list([-3, 0, 7]))
