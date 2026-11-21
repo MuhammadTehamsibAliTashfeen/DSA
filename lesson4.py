@@ -1,21 +1,20 @@
-
-def find_largest(numbers):
-
-  if len(numbers) == 0:
-      return None
-  
-  largest = numbers[0]
-  
-  for i in numbers:
-      if i > largest:
-          largest = i
-  
-  return largest
-          
-
-        
-
-
-print(find_largest([4, 9, 2, 15, 7]))
-print(find_largest([]))
-print(find_largest([-8, -3, -12]))
+def count_occurrences(numbers, target):
+    if len(numbers) == 0:
+        return 0
+    elif len(numbers) > 0:
+        count = 0
+        for i in numbers:
+            if i == target:
+                count +=1
+        return count
+    
+    
+    
+    
+    
+    
+    
+    
+print(count_occurrences([2, 4, 2, 6, 2], 2))
+print(count_occurrences([1, 3, 5], 7))
+print(count_occurrences([], 10))
