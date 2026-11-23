@@ -1,6 +1,11 @@
-import math
-x = float(input("Number "))
+def find_largest(numbers):
+    if len(numbers) == 0:
+        return None
 
-sigmoid_function = 1/(1 + math.exp(-x))
+    largest = numbers[0]
 
-print(sigmoid_function)
+    for i in numbers:
+        if i > largest:
+            largest = i
+
+    return largest
