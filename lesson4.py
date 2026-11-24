@@ -1,29 +1,14 @@
-def find_second_largest(numbers):
-    
-    if len(numbers) == 0:
-        return None
-    
-    largest = numbers[0]
-    
-    for i in numbers:
-        if i > largest:
-            largest = i
-    
-    second = numbers[0]
-    
-    for i in numbers:
-        if largest > i and i > second:
-            second = i
-    return second
-        
-    
-    
-    
-    
-    
-    
-print(find_second_largest([12, 7, 25, 18, 25]))
-print(find_second_largest([5, 5, 5]))
-print(find_second_largest([10]))
-print(find_second_largest([]))
-print(find_second_largest([-8, -3, -12]))
+# Write a program that:
+
+# Has a comment at the top saying what the program does
+# Prints your name
+# Prints your favorite food
+# Prints the result of 12 × 7 (Python should calculate it, not you!)
+
+# ⭐ Bonus challenge: print how many minutes are in a week, using only math in Python. Hint: minutes × hours × days.
+
+#program prints the name, food, multiplication and minutes in a week
+print("Ali")
+print("Favourite food is steak")
+print("12 x 7", 12*7)
+print("mininutes in a week are: ", 24*60*7)
