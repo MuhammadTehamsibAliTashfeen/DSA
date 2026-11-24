@@ -1,14 +1,27 @@
-# Write a program that:
+# # Create the shop product program:
 
-# Has a comment at the top saying what the program does
-# Prints your name
-# Prints your favorite food
-# Prints the result of 12 × 7 (Python should calculate it, not you!)
+# # product_name (str)
+# # price (float), for example 4.99
+# # quantity (int)
+# # in_stock (bool)
+# # Calculate total_cost
+# # Print readable sentences, like:
+# Product: Coffee
+# Price: 4.99
+# Quantity: 3
+# In stock: True
+# Total cost: 14.97
 
-# ⭐ Bonus challenge: print how many minutes are in a week, using only math in Python. Hint: minutes × hours × days.
+product = "Coffee"
+price = 4.99
+quantity = 3
+in_stock = True
+total_cost = quantity * price
+print("Product:", product)
+print("Price:", price)
+print("Quantity:", quantity)
+print("In Stock", in_stock)
+print("Total cost:", total_cost)
 
-#program prints the name, food, multiplication and minutes in a week
-print("Ali")
-print("Favourite food is steak")
-print("12 x 7", 12*7)
-print("mininutes in a week are: ", 24*60*7)
+total_minutes = 135
+print(total_minutes//60, total_minutes% 60)
