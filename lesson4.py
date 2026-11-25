@@ -1,29 +1,32 @@
-# --- RECEIPT ---
-# Product: Coffee
-# Price: $4.99
-# Quantity: 3
-# In stock: True
-# Subtotal: $14.97
-# Discount (10%): -$1.50
-# Total: $13.47
-
 product = input("Please select the Product: ")
 price = float(input("Please enter the Price in $: "))
 quantity = int(input("Please enters the qunatity: "))
 in_stock = True
-discount = float(input("Please enter the discount in %: "))
+
+
+if quantity >= 10:
+    discount = 20
+elif quantity >= 5:
+    discount = 10
+else:
+    discount = 0
 
 subtotal = price * quantity
-discount_given = subtotal * (discount / 100)
+discount_given = round(subtotal * (discount / 100), 2)
 total = subtotal - discount_given
 
-print()
-print(" --- RECEIPT --- ")
-print(f"Product: {product}")
-print(f"Price: ${price:.2f}")
-print(f"Quantity: {quantity}")
-print(f"In Stock: {in_stock}")
-print(f"Subtotal is {subtotal:.2f}")
-print(f"Discount ({discount:g}%): -${discount_given:.2f}")
-print(f"Total: ${total:.2f}")
-
+if quantity <= 0:
+    print("Invalid quantity!")
+else:
+    print()
+    print("---RECEIPT---")
+    print(f"Product: {product}")
+    print(f"Price: ${price:.2f}")
+    print(f"Quantity: {quantity}")
+    print(f"In Stock: {in_stock}")
+    print(f"Subtotal: ${subtotal:.2f}")
+    if discount > 0:
+        print(f"Discount ({discount:g}%): -${discount_given:.2f}")
+    print(f"Total: ${total:.2f}")
+    if total > 50:
+        print("🎉 You qualify for free delivery!")
